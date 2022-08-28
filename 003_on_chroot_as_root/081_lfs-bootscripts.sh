@@ -10,4 +10,6 @@ lfs_lib_pre_build
 
 make install
 
+bash /usr/lib/udev/init-net-rules.sh
+
 lfs_lib_post_build

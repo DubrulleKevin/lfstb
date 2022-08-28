@@ -25,4 +25,8 @@ mkdir -pv /var/lib/hwclock
 make
 make install
 
+rm -rf /usr/share/{info,man,doc}/*
+find /usr/{lib,libexec} -name \*.la -delete
+rm -rf /tools
+
 lfs_lib_post_build
